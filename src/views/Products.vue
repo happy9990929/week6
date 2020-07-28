@@ -44,6 +44,7 @@ export default {
         })
         .catch((error) => {
           loader.hide();
+          // eslint-disable-next-line
           console.log(error);
         });
     },
@@ -53,6 +54,7 @@ export default {
         this.cart = res.data.data;
         this.cartTotal = this.cart.reduce((acc, cur) => acc + cur.product.price * cur.quantity, 0);
       }).catch((error) => {
+        // eslint-disable-next-line
         console.log(error);
       });
     },
@@ -65,6 +67,7 @@ export default {
       this.$http.post(api, cart).then(() => {
         this.getCart();
       }).catch((error) => {
+        // eslint-disable-next-line
         console.log(error);
       });
     },

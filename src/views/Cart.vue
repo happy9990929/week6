@@ -87,6 +87,7 @@ export default {
         this.cartTotal = this.cart.reduce((acc, cur) => acc + cur.product.price * cur.quantity, 0);
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },
@@ -102,6 +103,7 @@ export default {
         this.getCart();
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },
@@ -113,6 +115,7 @@ export default {
         this.getCart();
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },
@@ -124,6 +127,7 @@ export default {
         this.getCart();
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },

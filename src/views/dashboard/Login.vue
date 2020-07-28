@@ -58,6 +58,7 @@ export default {
         this.$router.push('/admin/products');
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },

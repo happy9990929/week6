@@ -69,6 +69,7 @@ export default {
           this.loginSuccess = true;
         }
       }).catch((error) => {
+        // eslint-disable-next-line
         console.log(error);
         this.$router.push('/login');
       });

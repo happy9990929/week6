@@ -60,11 +60,13 @@ export default {
       const loader = this.$loading.show();
       this.$http.get(api).then((res) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(res);
         this.products = res.data.data;
         this.pagination = res.data.meta.pagination;
       }).catch((error) => {
         loader.hide();
+        // eslint-disable-next-line
         console.log(error);
       });
     },
