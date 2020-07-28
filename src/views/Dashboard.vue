@@ -22,6 +22,9 @@
                     <router-link to="/admin/orders" class="nav-link">訂單列表</router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link to="/admin/imgStorage" class="nav-link">圖片儲存列表</router-link>
+                </li>
+                <li class="nav-item">
                     <a href="#" class="nav-link" @click.prevent='logout'>登出</a>
                 </li>
             </ul>

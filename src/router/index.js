@@ -71,6 +71,11 @@ const routes = [
         name: 'Products',
         component: () => import('../views/dashboard/Products.vue'),
       },
+      {
+        path: 'imgStorage',
+        name: 'ImgStorage',
+        component: () => import('../views/dashboard/ImgStorage.vue'),
+      },
     ],
   },
 ];
